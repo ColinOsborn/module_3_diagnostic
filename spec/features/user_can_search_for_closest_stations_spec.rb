@@ -5,6 +5,7 @@ describe "GET index" do
 
     visit("/")
     fill_in "Search by zip...", with: 80203
+    save_and_open_page
     click_on "Locate"
 
     expect(response).to redirect_to "/search?zip=80203"
