@@ -1,10 +1,10 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "GET index" do
   it "can search for fuel stations in 6 mile radius from zip" do
 
-    visit "/"
-    fill_in with: 80203
+    visit("/")
+    fill_in "Search by zip...", with: 80203
     click_on "Locate"
 
     expect(response).to redirect_to "/search?zip=80203"

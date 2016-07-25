@@ -15,6 +15,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'rspec-rails'
 gem 'capybara'
+gem 'launchy'
 
 group :development, :test do
   gem 'byebug'
